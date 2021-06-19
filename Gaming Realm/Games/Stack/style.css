@@ -1,0 +1,289 @@
+:root{
+    --width: 400px;
+}
+
+body{
+    background-image: url("./back.gif");
+    /* filter: blur(0px); */
+    /* background-color: black; */
+    height: 950px;
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#game {
+    background-image: url("./gameback.jpg");
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    margin-top: 3%;
+    border: 5px solid black;
+    background-size: cover;
+    border-radius: 1.5rem;
+    background-repeat: no-repeat;
+}
+
+#score {
+    position: absolute;
+    height: 22px;
+    width: 100px;
+    top: 10%;
+    left: 37%;
+    background-color: rgb(92, 81, 81);
+    border: 3px black solid;
+    border-radius: 0.5rem;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+
+#btn {
+    font-size: 2rem;
+    padding: 0.5rem 2rem;
+    border: 3px solid black;
+    border-radius: 0.3rem;
+    margin: 1rem auto;
+    display: block;
+    background-color: lightgreen;
+}
+
+#btn:active {
+    background-color: red;
+}
+
+.slider {
+    /* border: 1px solid black; */
+    visibility: hidden;
+    height: 20px;
+    width: 100px;
+    background-repeat: repeat-y;
+    /* background-color: red; */
+    background-image: url("crain.png");
+    background-repeat: repeat-x;
+    background-size: contain;
+    position: relative;
+}
+
+#all {
+    filter: blur(0px);
+}
+
+#slider1 {
+    visibility: visible;
+}
+
+.animate {
+    animation: slide 4s infinite linear;
+}
+
+@keyframes slide {
+    0%{left: 0px;}
+    50%{left: var(--width);}
+    100%{left: 0px;}
+} 
+
+#start{
+    /* z-index: 100; */
+    top: 0px;
+    bottom: 0px;
+    /* background-image: url("./startrun.gif"); */
+    background-size: cover;
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    z-index: 400;
+    height: 100%;
+    background-position: bottom;
+}
+#startin{
+    z-index: 1;
+    position: absolute;    /* border: white 2px solid; */
+    background-image: url("./startbutback.gif");
+    left: 55%;
+    top: 22%;
+    height: 400px;
+    width: 400px;
+    background-position: center;
+    background-color: black;
+    /* background-image: url("./startbut.png"); */
+    background-size: cover;
+}
+#textin{
+    position: relative;
+    top: 45%;
+    color: whitesmoke;
+    font-size: 40px;
+    font-weight: 100;
+    text-align: center; 
+}
+
+#textin:hover {
+    color: rgb(175, 175, 175);
+    text-shadow: 2px 2px 8px whitesmoke ;
+}
+
+#hold {
+    z-index: 10;
+    position: absolute;
+    left: 20%;
+    top: 30% ;
+    height: 300px;
+    width: 300px;
+}
+#bar1 {
+    height: 100px;
+    width: 300px;
+    position: relative;
+    animation: move1 4s infinite linear;
+}
+#bar3 {
+    height: 100px;
+    width: 300px;
+    position: relative;
+    animation: move2 4s infinite linear;
+
+}
+#bar2 {
+    height: 100px;
+    width: 300px;
+    position: relative;
+}
+ 
+#b1 {
+    position: absolute;
+    border-radius: 0.5rem;
+    border: black 5px solid;
+    background-color: whitesmoke;
+    height: 90px;
+    width: 90px;
+}
+#b2 {
+    left: 100px;
+    position: absolute;
+    border-radius: 0.5rem;
+    border: black 5px solid;
+    background-color: whitesmoke;
+    height: 90px;
+    width: 90px;
+}
+#b3 {
+    position: absolute;
+    left: 200px;
+    border-radius: 0.5rem;
+    border: black 5px solid;
+    background-color: whitesmoke;
+    height: 90px;
+    width: 90px;
+}
+
+#b4 {
+    position: absolute;
+    border-radius: 0.5rem;
+    border: black 5px solid;
+    background-color: whitesmoke;
+    height: 90px;
+    width: 90px;
+}
+#b5 {
+    left: 100px;
+    position: absolute;
+    border-radius: 0.5rem;
+    border: black 5px solid;
+    background-color: whitesmoke;
+    height: 90px;
+    width: 90px;
+}
+#b6 {
+    position: absolute;
+    left: 200px;
+    border-radius: 0.5rem;
+    border: black 5px solid;
+    background-color: whitesmoke;
+    height: 90px;
+    width: 90px;
+}
+#b7 {
+    position: absolute;
+    border-radius: 0.5rem;
+    border: black 5px solid;
+    background-color: whitesmoke;
+    height: 90px;
+    width: 90px;
+}
+#b8 {
+    left: 100px;
+    position: absolute;
+    border-radius: 0.5rem;
+    border: black 5px solid;
+    background-color: whitesmoke;
+    height: 90px;
+    width: 90px;
+}
+#b9 {
+    position: absolute;
+    left: 200px;
+    border-radius: 0.5rem;
+    border: black 5px solid;
+    background-color: whitesmoke;
+    height: 90px;
+    width: 90px;
+} 
+
+@keyframes move1 {
+    0% {left: 0px;}
+    25%{left: -100px;}
+    75%{left: 100px;}
+    100%{left: 0px;}
+} 
+@keyframes move2 {
+    0% {left: 0px;}
+    25%{left: 100px;}
+    75%{left: -100px;}
+    100%{left: 0px;}
+} 
+
+@media only screen and (max-width: 600px) {
+    body{
+        background-image: url(./4.jpg);
+    }
+}
+
+#end {
+    display: none;
+    position: absolute;
+    left: 37%;
+    top: 11%;
+    /* background-color: white; */
+    background-image: url("./replay.gif");
+    background-size: cover;
+    height: 400px;
+    width: 400px;
+}
+
+#resu {
+    z-index: 50;
+    position: relative;
+    text-align: center;
+    top: 45%;
+    color: white;;
+    font-size: 40px;
+}
+
+#replay {
+    position: relative;
+    background-size: cover;
+    background-image: url("./restart.png");
+    /* background-color: white; */
+    height: 53px;
+    width: 200px;
+    top: 45%;
+    left: 25%;
+}

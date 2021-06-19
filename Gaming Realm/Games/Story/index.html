@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Story Board!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="start">
+        <div id="cont">
+            <div id="midt">CHOOSE YOUR MOVIE</div>
+            <div id="movie1" onclick="movie1(0)"></div>
+            <div id="movie2" onclick="movie2(0)"></div>
+        </div>
+    </div>
+    <div id="main">
+        <div id="vid"></div>
+        <div id="textc"></div>
+        <div id="but">
+            <div id="back" onclick="back()">
+                <div id="backt">RESET!</div>
+            </div>
+            <div id="ford" onclick="play(1)">
+                <div id="fordt">NEXT!</div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js">
+</script>
+
+</html>

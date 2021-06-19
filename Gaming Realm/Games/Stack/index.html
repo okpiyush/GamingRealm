@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Slidinn!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="start">
+        <div id="hold">
+            <div id="bar1">
+                <div id="b1"></div>
+                <div id="b2"></div>
+                <div id="b3"></div>
+            </div>
+            <div id="bar2">
+                <div id="b4"></div>
+                <div id="b5"></div>
+                <div id="b6"></div>
+            </div>
+            <div id="bar3">
+                <div id="b7"></div>
+                <div id="b8"></div>
+                <div id="b9"></div>
+            </div>
+        </div>
+        <div id="startin">
+            <div id="textin" onclick="fade()">START</div>
+        </div>
+    </div>
+    <div id="all">
+        <div id="game">
+            <div id="score">SCORE : 0</div>
+        </div>
+        <button onclick="stopSliding(1)" id="btn">Stop!
+        </button>
+    </div>
+    <div id="end">
+        <div id="resu">SCORE</div>
+        <div id="replay" onclick="restart()"></div>
+    </div>
+</body>
+<script src="script.js">
+</script>
+
+</html>
